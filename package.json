@@ -19,7 +19,7 @@
     "js"
   ],
   "author": "Mr.zhou <hua909000@163.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hua909000/vue-xss/issues"
   },

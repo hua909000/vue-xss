@@ -1,5 +1,8 @@
 # vue-xss
 
+![npm](https://img.shields.io/npm/v/vue-xss)
+![NPM](https://img.shields.io/npm/l/vue-xss)
+
 > 一个Vue.js插件，可通过简单的方式防止XSS攻击
 
 有任何问题欢迎发布 issue，我会在看到后第一时间回复大家。如果觉得还不错的话，不要吝啬你的 star 哦~
