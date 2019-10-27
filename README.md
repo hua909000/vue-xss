@@ -1,9 +1,11 @@
 # vue-xss
 
-![npm](https://img.shields.io/npm/v/vue-xss)
-![NPM](https://img.shields.io/npm/l/vue-xss)
+![npm version](https://img.shields.io/npm/v/vue-xss)
+![language](https://img.shields.io/github/languages/top/hua909000/vue-xss)
+![file size](https://img.shields.io/github/size/hua909000/vue-xss/index.js)
+![LICENSE](https://img.shields.io/npm/l/vue-xss)
 
-> 一个Vue.js插件，可通过简单的方式防止XSS攻击
+> 一个开箱即用的Vue.js插件，可通过简单的方式防止XSS攻击
 
 有任何问题欢迎发布 issue，我会在看到后第一时间回复大家。如果觉得还不错的话，不要吝啬你的 star 哦~
 
@@ -59,6 +61,7 @@ Vue.use(VueXss, options)
 
 <template>
   <div v-html="$xss(content)"></div>
+  <!-- 过滤后输出： -->
 <template>
 
 <script>
@@ -66,7 +69,7 @@ Vue.use(VueXss, options)
 export default {
   data () {
     return{
-      content: '<h1>Hello World</h1>'
+      content: '<script>alert('XSS-TEST')</script>'
     }
   },
   ...
