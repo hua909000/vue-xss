@@ -1,6 +1,6 @@
 {
   "name": "vue-xss",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "一个开箱即用的Vue.js插件，可通过简单的方式防止XSS攻击",
   "main": "index.js",
   "scripts": {

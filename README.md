@@ -45,7 +45,8 @@ var options = {
     img: ['src', 'alt'],
     ...
   },
-  stripIgnoreTagBody: ['script', 'style'],
+  stripIgnoreTag: true, // 去掉不在白名单上的标签   true：去掉不在白名单上的标签
+  stripIgnoreTagBody: ['script', 'style'] // 去掉不在白名单上的标签及标签体   ['tag1', 'tag2']：仅去掉指定的不在白名单上的标签
   onTagAttr: function () {
     // todo
   },
@@ -61,7 +62,7 @@ Vue.use(VueXss, options)
 
 <template>
   <div v-html="$xss(content)"></div>
-  <!-- 过滤后输出： -->
+  <!-- 过滤后输出：<iframe></iframe> -->
 <template>
 
 <script>
@@ -69,7 +70,7 @@ Vue.use(VueXss, options)
 export default {
   data () {
     return{
-      content: '<script>alert('XSS-TEST')</script>'
+      content: '<iframe onload=alert("XSS-TEST")></iframe>'
     }
   },
   ...
