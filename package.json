@@ -1,6 +1,6 @@
 {
   "name": "vue-xss",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "一个开箱即用的Vue.js插件，可通过简单的方式防止XSS攻击",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,17 @@
     "hack",
     "csrf",
     "xss",
-    "js"
+    "js",
+    "input",
+    "sanitization",
+    "xss",
+    "sanitize",
+    "sanitisation",
+    "escape",
+    "encode",
+    "filter",
+    "validator",
+    "whitelist"
   ],
   "author": "Mr.zhou <hua909000@163.com>",
   "license": "MIT",
@@ -25,6 +35,6 @@
   },
   "homepage": "https://github.com/hua909000/vue-xss#readme",
   "dependencies": {
-    "xss": "^1.0.6"
+    "xss": "^1.0.14"
   }
 }
