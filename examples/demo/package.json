@@ -10,7 +10,7 @@
     "vue-xss": "^1.0.3"
   },
   "devDependencies": {
-    "@vue/cli-service": "^4.1.0",
+    "@vue/cli-service": "^5.0.8",
     "vue-template-compiler": "^2.6.10"
   },
   "browserslist": [
